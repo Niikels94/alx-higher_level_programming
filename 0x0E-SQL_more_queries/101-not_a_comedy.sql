@@ -9,6 +9,5 @@ WHERE s.title NOT IN (
     FROM tv_shows AS s
     JOIN tv_show_genres AS t ON s.id = t.show_id
     JOIN tv_genres AS g ON t.genre_id = g.id
-    WHERE g.name = "Comedy"
-)
+    WHERE g.name = "Comedy")
 ORDER BY s.title ASC;
